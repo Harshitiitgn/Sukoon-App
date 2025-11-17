@@ -1,6 +1,6 @@
 # Sukoon – Elderly Wellness & Support App  
 
-**Demo Video** : [Link]([https://example.com](https://drive.google.com/file/d/1O-rjJOvXXtvL6JOnc_Zl_UHSZlLiOAdz/view?usp=sharing))
+**Demo Video** : [Link](https://drive.google.com/file/d/1O-rjJOvXXtvL6JOnc_Zl_UHSZlLiOAdz/view?usp=sharing)
 
 
 ## **CS 435 — Human Computer Interaction** 
