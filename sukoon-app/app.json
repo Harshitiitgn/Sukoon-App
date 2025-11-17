@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Sukoon",
+    "slug": "sukoon-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/android-chrome-512x512.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/android-chrome-512x512.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF9F3"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-chrome-512x512.png",
+        "backgroundColor": "#FDF9F3"
+      },
+      "package": "com.example.sukoonapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/android-chrome-512x512.png"
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}
