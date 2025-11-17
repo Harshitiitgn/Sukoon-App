@@ -1,7 +1,6 @@
 # Sukoon – Elderly Wellness & Support App  
 
-## Course  
-**CS 435 — Human Computer Interaction**
+## **CS 435 — Human Computer Interaction** 
 
 ## Group Members  
 - Teesha Saluja  
