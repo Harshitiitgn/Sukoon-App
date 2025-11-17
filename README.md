@@ -4,14 +4,14 @@
 **CS 435 — Human Computer Interaction**
 
 ## Group Members  
-- Member 1  
-- Member 2  
-- Member 3  
-- Member 4  
+- Teesha Saluja  
+- Mrugank Patil
+- Harshit
+- Diraj Naik  
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 **Sukoon** is a mobile + backend system designed to support elderly individuals in their daily lives.  
 The app focuses on:
@@ -27,7 +27,7 @@ The project was developed as a **high-fidelity prototype** for CS 435, applying 
 
 ---
 
-## 📱 Core Features
+## Core Features
 
 ### 1. Onboarding & Profile
 - Simple, step-by-step onboarding flow  
@@ -139,7 +139,7 @@ This consistent structure ensures elderly users always know *where* they are and
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 ### Frontend (sukoon-app)
 - **React Native** with **Expo**
@@ -171,12 +171,12 @@ This consistent structure ensures elderly users always know *where* they are and
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 At the root of the repository:
 
 ```bash
-SUKOON-PROJECT/
+sukoon-project/
 ├── favicon_io/              # App icon / branding assets (optional)
 ├── sukoon-app/              # React Native + Expo mobile app
 │   ├── .expo/
@@ -208,101 +208,80 @@ SUKOON-PROJECT/
 └── README.md
 ```
 
-### Prerequisites
+## Prerequisites
 
 - Node.js (LTS, e.g., 18+) and npm or yarn
 - Expo CLI (optional, can use npx expo inline)
 - Android Emulator or physical Android device with Expo Go
 - (Optional) MongoDB running locally or MongoDB Atlas connection string
 
-Setup & Run Instructions
-1. Clone the Repository
+## Setup & Run Instructions
+
+### 1. Clone the Repository
+
+```bash 
 git clone https://github.com/<your-username>/<repository-name>.git
 cd <repository-name>   # e.g., cd SUKOON-PROJECT  
+```
 
-2. Backend Setup (sukoon-backend)
+### 2. Backend Setup (sukoon-backend)
+
+```bash
 cd sukoon-backend
-npm install  
+npm install
+```
 
+- Create a .env file inside sukoon-backend/:
 
-Create a .env file inside sukoon-backend/:
-
+```ini
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/sukoon
 # Any other secrets like:
 # JWT_SECRET=some_super_secret_key
 # CLIENT_ORIGIN=http://localhost:19006  
+```
 
+- Start the backend server:
 
-Start the backend server:
-
+```bash
 npm start
 # or, if a dev script exists:
 npm run dev  
+```
 
+- The backend will typically run at: http://localhost:5000
+- (Adjust according to your actual server.js and package.json scripts.)
 
-The backend will typically run at: http://localhost:5000
-(Adjust according to your actual server.js and package.json scripts.)
+### 3. Frontend Setup (sukoon-app)
 
-3. Frontend Setup (sukoon-app)
+- In a new terminal:
 
-In a new terminal:
-
+```bash
 cd sukoon-app
 npm install  
+```
 
+- If the app uses an API base URL for the backend, set it in a config file or .env (for example: API_BASE_URL=http://localhost:5000).
 
-If the app uses an API base URL for the backend, set it in a config file or .env (for example: API_BASE_URL=http://localhost:5000).
+- Start the Expo app:
 
-Start the Expo app:
-
+```bash
 npx expo start
 # or
 npm start  
+```
 
+- Then you can:
+  - Press **a** to open the **Android emulator**, or
+  - Scan the **QR code** in **Expo Go** on your physical device, or
+  - Press **w** to open it in the **web browser** (for basic testing).
 
-Then you can:
+## Acknowledgement
 
-Press a to open the Android emulator, or
+- This project was created as part of CS 435 — Human Computer Interaction, applying concepts of:
+  - User research and personas
+  - Low-fidelity to high-fidelity prototyping
+  - Accessibility and elderly-friendly design
+  - Usability-focused evaluation
 
-Scan the QR code in Expo Go on your physical device, or
-
-Press w to open it in the web browser (for basic testing).
-
-🌐 Making the Repository Public on GitHub
-
-On GitHub, create a new public repository (for example: sukoon-hci-app).
-
-On your local machine (inside SUKOON-PROJECT/):
-
-git init
-git add .
-git commit -m "Initial commit: Sukoon HCI project"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repository-name>.git
-git push -u origin main  
-
-
-Confirm that the repo is public and contains:
-
-sukoon-app folder (frontend code)
-
-sukoon-backend folder (backend code)
-
-README.md
-
-(Later) demo video link and report PDF if required
-
-🙌 Acknowledgement
-
-This project was created as part of CS 435 — Human Computer Interaction, applying concepts of:
-
-User research and personas
-
-Low-fidelity to high-fidelity prototyping
-
-Accessibility and elderly-friendly design
-
-Usability-focused evaluation
-
-Sukoon aims to bring a little more calm, structure, and support into the everyday lives of elderly users.
+**Sukoon aims to bring a little more calm, structure, and support into the everyday lives of elderly users.**
